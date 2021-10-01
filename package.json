@@ -1,0 +1,22 @@
+{
+  "name": "typeorm-before-insert-hook-issue",
+  "version": "1.0.0",
+  "description": "Minimal repository for TypeORM @BeforeInsert hook issue",
+  "main": "index.js",
+  "scripts": {
+    "start:mysql": "docker-compose up",
+    "start:manual_transform": "ENTITY_TRANSFORM_TYPE=MANUAL ts-node src/index.ts",
+    "start:typeorm_transform": "ENTITY_TRANSFORM_TYPE=TYPEORM ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.10.2",
+    "mysql2": "^2.3.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.2.1",
+    "typeorm": "^0.2.37",
+    "typescript": "^4.4.3"
+  }
+}
